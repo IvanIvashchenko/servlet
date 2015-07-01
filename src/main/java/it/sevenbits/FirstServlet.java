@@ -9,6 +9,9 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.Enumeration;
 
+/**
+ * Servlet class without java server page
+ */
 public class FirstServlet extends HttpServlet {
 
     public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {

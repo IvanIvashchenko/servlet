@@ -9,6 +9,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Servlet which uses jsp for rendering data
+ */
 public class JspServlet extends HttpServlet {
 
     public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws ServletException, IOException {
@@ -21,7 +24,6 @@ public class JspServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        //set the MIME type of the response, "text/html"
         request.setAttribute("users", users);
         request.setAttribute("name", "dataFromServer");
         request.getRequestDispatcher("list.jsp").forward(request, response);

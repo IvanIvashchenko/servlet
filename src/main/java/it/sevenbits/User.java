@@ -1,5 +1,8 @@
 package it.sevenbits;
 
+/**
+ * Model for description database entity
+ */
 public class User {
 
     private Long id;

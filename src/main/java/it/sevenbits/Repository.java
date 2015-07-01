@@ -45,9 +45,6 @@ public class Repository {
             dbConnection = getDBConnection();
             statement = dbConnection.prepareStatement(insertTableSQL);
 
-            System.out.println(insertTableSQL);
-
-            // execute insert SQL stetement
             statement.execute(insertTableSQL);
 
         } catch (SQLException e) {
